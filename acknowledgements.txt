@@ -1,0 +1,63 @@
+I used the following sources while completing this project: 
+
+Video Provided in Class to Explain Backtesting: https://www.youtube.com/watch?v=s-JtMjnKsec
+
+Article on Forecasting with sklearn: https://medium.com/@mouse3mic3/a-practical-guide-on-scikit-learn-for-time-series-forecasting-bbd15b611a5d
+
+
+Additionally, I used Generative AI, specifically ChatGPT, to clarify the topic of Backtest Errors in the following way: 
+
+Prompt Used: "please explain backtest errors and their applications"
+
+GenAI Response: "Sure! Let's break down backtest errors and their applications.
+
+What are Backtest Errors?
+In finance and quantitative trading, backtesting is the process of testing a trading strategy or model on historical data to see how it would have performed in the past.
+A backtest error occurs when the results of the backtest do not accurately reflect what would happen in real-world trading due to various issues or limitations in the backtesting process.
+
+Types of Backtest Errors
+Lookahead Bias (or Forward-Looking Bias)
+Using information in the backtest that would not have been available at the time of trading.
+Example: Using next day’s price to decide today's trade.
+Survivorship Bias
+Using only data from companies or assets that survived until the present, ignoring those that went bankrupt or delisted.
+This can make a strategy appear more profitable than it really was.
+Data-Snooping Bias / Overfitting
+Excessively optimizing a model on historical data, causing it to fit noise instead of true signal.
+Such models fail on new data.
+Transaction Cost Ignorance
+Ignoring or underestimating costs like commissions, slippage, bid-ask spreads.
+This makes the strategy look more profitable than in reality.
+Lookback Bias
+Using future data when deciding parameters or signals retrospectively.
+Latency and Execution Delay Errors
+Assuming trades happen instantly at a certain price without considering market impact, order delays, or partial fills.
+Incorrect Data Handling
+Using dirty or incorrect data, or mismatching timestamps, which leads to inaccurate simulation.
+
+Why Do Backtest Errors Matter?
+They cause misleading results.
+Lead to false confidence in strategies.
+Result in financial losses when deploying a flawed strategy in live trading.
+They hinder the ability to truly evaluate risk and performance.
+Applications of Understanding and Addressing Backtest Errors
+Developing Robust Trading Strategies
+Helps in creating realistic and reliable models that can perform in live markets.
+
+Risk Management
+Avoiding overestimating returns and underestimating risks.
+Improving Data Quality and Methodology
+Ensuring the integrity of the input data and realistic assumptions.
+Better Model Validation
+Incorporating walk-forward testing, out-of-sample testing, and cross-validation to minimize overfitting.
+Regulatory and Compliance Reporting
+Accurate backtests ensure firms meet regulatory standards on model validation.
+Education and Research
+Teaching and learning about pitfalls in quantitative analysis.
+
+Summary
+Backtest errors are pitfalls that lead to inaccurate evaluation of trading strategies. By understanding and mitigating these errors, quantitative traders and analysts can build more reliable models and avoid costly mistakes in real trading environments."
+
+
+
+
